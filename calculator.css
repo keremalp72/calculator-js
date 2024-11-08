@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+}
+
+.calculator {
+  width: 480px;
+  margin-inline: auto;
+  background-color: #3a4663;
+  padding: 24px;
+  padding-bottom: 31px;
+}
+
+.resultTxt {
+  background-color: #181f33;
+  padding: 29px 24px;
+  font-weight: bold;
+  color: white;
+  text-align: right;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  height: 88px;
+}
+
+.calculator-btns {
+  background-color: #242d44;
+  padding: 24px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 13px;
+  
+}
+
+.calculator-btns button {
+  font-family: League Spartan;
+  background-color: #eae3dc;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 13px 10px 11px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29.44px;
+  letter-spacing: -0.5333333611488342px;
+}
+.btn-num {
+  color: #434a59;
+  box-shadow: 0px -4px 0px 0px #B3A497 inset;
+
+}
+
+.calculator-btns .btn-action {
+  color: white;
+  background-color: #647198;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 25.76px;
+  letter-spacing: -0.46666666865348816px;
+  box-shadow: 0px -4px 0px 0px #414e73 inset;
+}
+
+.calculator-btns .btn-calculate {
+  background-color: #d03f2f;
+  box-shadow: 0px -4px 0px 0px #93261a inset;
+  color: white;
+  grid-column: span 2;
+  font-family: League Spartan;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 25.76px;
+  letter-spacing: -0.46666666865348816px;
+}
+
+.btn-reset {
+  grid-column: span 2;
+}
+
+#themeChangeInput {
+  appearance: none;
+  background-color: #242d44;
+  border-radius: 13px;
+  width: 71px;
+  height: 26px;
+  padding: 5px;
+}
+#themeChangeInput::-webkit-slider-thumb {
+  appearance: none;
+  background-color: #d03f2f;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.calculator-theme {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 36px;
+  color: white;
+}
+.theme {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+}
+.theme h2 {
+  font-family: League Spartan;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11.04px;
+  letter-spacing: 1px;
+}
+
+.thememodes {
+  display: flex;
+  flex-direction: column;
+}
+.thememodes h3 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.themenumbers {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11.04px;
+}
+
+
+/* Tema 2 - Beyaz Tema */
+.calculator.white-theme {
+  background-color: #E6E6E6;
+}
+.resultTxt.white-theme {
+  background-color: #fff;
+  color: #000;
+}
+.calculator-theme.white-head{
+  color: #36362C;
+}
+#themeChangeInput.white-input{
+  background-color:#D2CDCD ;
+}
+.resultTxt.white-result{
+  background-color: #EEEEEE;
+  color: #36362C;
+}
+.calculator-btns.white-btns{
+  background-color: #D2CDCD;
+}
+.calculator-btns button.white-btn{
+  color: #36362C;
+}
+/* Tema 3 - Mor Tema */
+.calculator.purple-theme {
+  background-color: #17062A;
+}
+.calculator-theme.purple-head{
+  color: #FFE53D;
+}
+#themeChangeInput.purple-input{
+  background-color:#1E0936 ;
+}
+.resultTxt.purple-result{
+  background-color: #1E0936;
+  color: #FFE53D;
+}
+.calculator-btns.purple-btns{
+  background-color: #1E0936;
+}

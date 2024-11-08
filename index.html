@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="calculator-theme">
+        <h1>calc</h1>
+        <div class="theme">
+          <h2>THEME</h2>
+          <div class="thememodes">
+            <div class="themenumbers">
+            <h3>1</h3>
+            <h3>2</h3>
+            <h3>3</h3>
+          </div>
+            <input
+              id="themeChangeInput"
+              type="range"
+              min="1"
+              max="3"
+              step="1"
+              value="1"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="resultTxt"></div>
+      <div class="calculator-btns">
+        <button class="btn-num">7</button>
+        <button class="btn-num">8</button>
+        <button class="btn-num">9</button>
+        <button class="btn-action btn-del">DEL</button>
+        <button class="btn-num">4</button>
+        <button class="btn-num">5</button>
+        <button class="btn-num">6</button>
+        <button class="btn-num">+</button>
+        <button class="btn-num">1</button>
+        <button class="btn-num">2</button>
+        <button class="btn-num">3</button>
+        <button class="btn-num">-</button>
+        <button class="btn-num">.</button>
+        <button class="btn-num">0</button>
+        <button class="btn-num">/</button>
+        <button class="btn-num">*</button>
+        <button class="btn-action btn-reset">RESET</button>
+        <button class="btn-calculate">=</button>
+      </div>
+    </div>
+  </body>
+</html>
